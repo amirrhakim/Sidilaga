@@ -1,0 +1,16 @@
+            - name: Google Apps Script (GAS) Action
+  # You may pin to the exact commit or the version.
+  # uses: shiftavenue/gas-action@2f22d5b94e3bb8b348336e8e5bae0f1d8f1076c9
+  uses: shiftavenue/gas-action@v0.1.2
+  with:
+    # Specifies the operation that should be performed (e.g. push code, deploy or run script). Currently allowed values are: push, deploy, run
+    command: 
+    # OAuth2 access token associated with the Google Cloud account/user used for this action
+    access-token: 
+    # Apps Script project ID in which the script is located
+    project-id: 
+    # Directory that contains the script code
+    script-dir: # optional, default is ./
+    # Entrypoint function of the Apps Script script used when triggering an execution
+    function: # optional, default is 
+          
