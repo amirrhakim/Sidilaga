@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDILAGA - Sistem Digital Layanan Gaji</title>
+    <!-- Favicon / Ikon Website -->
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/payroll.png" type="image/x-icon">
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /* Mencegah scroll double */
+            background-color: #f4f7fe;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+
+        /* Loader sementara sebelum iframe termuat */
+        #loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1a237e;
+            font-weight: 600;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loader">Memuat SIDILAGA...</div>
+
+    <!-- GANTI "URL_DEPLOYMENT_GAS_ANDA" DENGAN LINK DEPLOYMENT GOOGLE APPS SCRIPT YANG BERAKHIRAN /exec -->
+    <iframe
+        src="https://script.google.com/macros/s/AKfycbzF5jfm-Xy6f2sOTqEyZ4t5-LdQ5wbI-tgC1htKsk9LyboxYyMT95hWpJTsnwlpuewpGg/exec"
+        title="SIDILAGA App"></iframe>
+
+</body>
+
+</html>
+            - name: Google Apps Script Action
+  # You may pin to the exact commit or the version.
+  # uses: Mayu-mic/google-apps-script-action@213a22c93b8eae2d4ce0397e27fe8249ca7977e3
+  uses: Mayu-mic/google-apps-script-action@v2.0.1
+  with:
+    # Clasp configuration file
+    clasprc: 
+    # Google Apps Script Script ID
+    scriptId: 
+    # Command to execute (push, deploy or version)
+    command: 
+    # Description of the deployment
+    description: # optional
+    # Deployment ID
+    deploymentId: # optional
+    # Project root path
+    projectRootPath: # optional
+    # Source root directory (relative to project root)
+    sourceRootDir: # optional
+    # appsscript.json path
+    appsscriptJsonPath: # optional
+    # .clasp.json template path
+    claspJsonTemplatePath: # optional
